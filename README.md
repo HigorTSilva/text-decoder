@@ -6,6 +6,7 @@
 
 * [Descrição do projeto](#descrição-do-projeto)
 * [Funcionalidades](#funcionalidades)
+* [Site](#site)
 
 <br>
 
@@ -28,3 +29,9 @@ O sistema permitirá que as pessoas possam enviar textos que passem em mão de p
 :heavy_check_mark: `Botão de Descriptografar:` Vai descriptografar o texto em apenas um clique.
 
 :heavy_check_mark: `Botão de Copiar:` Copia o texto criptografado ou descriptografado para facilitar o acesso ao texto.
+
+<br>
+
+## Site
+
+<a href="https://higortsilva.github.io/text-decoder/">Entre no site e teste o decodificador de textos! Basta clicar aqui.</a>
