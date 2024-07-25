@@ -1,0 +1,20 @@
+/* Paleta de Cores */
+
+:root {
+    --background-color: #e4e9c0;
+    --secundary-background-color: #79ae92;
+    --primary-color: #1c5560;
+    --accent-color: #001f36;
+    --primary-text-color: #121212;
+    --secundary-text-color: #e8e8e8;
+    --terciary-text-color: #495057;
+}
+
+button {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+button:hover {
+    background-color: var(--accent-color);
+}

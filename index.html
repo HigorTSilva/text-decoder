@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/variables.css">
+    <link rel="stylesheet" href="./src/css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/23845fef48.js" crossorigin="anonymous" defer></script>
+
+    <script src="./src/script/scripts.js" defer></script>
+
+    <title>Decodificador de textos</title>
+</head>
+<body>
+    <main class="container">
+        <section class="order-area">
+            <h1 class="principal-title">Decodificador de Textos</h1>
+            <div class="input-area">
+                <textarea name="txtarea" id="txt-area" placeholder="Digite seu texto..."></textarea>
+                <div class="exclamation-text">
+                    <img src="./src/img/info.svg" alt="exclamation-symbol">
+                    <p>Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div class="buttons-area">
+                    <button id="btn-encrypt" onclick="btnEncrypt()">Criptografar</button>
+                    <button id="btn-decrypt" onclick="btnDecrypt()">Descriptografar</button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="result-area">
+            <div class="when-empty">
+                <img src="./src/img/empty.svg" alt="empty-img" width="75%">
+                <h1>Nenhuma mensagem encontrada</h1>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+            <div class="result-text">
+                <textarea name="txtresultarea" id="txt-result-area" placeholder="" readonly></textarea>
+                <div class="buttons-area">
+                    <button id="btn-copy" onclick="btnCopy()" placeholder="">Copiar</button>
+                    <button id="btn-clean" onclick="btnClean()" placeholder="">Limpar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="http://www.linkedin.com/in/higor-terr-693206256" target="_blank" rel="noopener noreferer" aria-label="linkedin">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/HigorTSilva" target="_blank" rel="noopener noreferer" aria-label="instagram">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://higorportfolio.netlify.app" target="_blank" rel="noopener noreferer" aria-label="portfolio">
+                <i class="fa-solid fa-code"></i>
+            </a>
+        </div>
+        <p>&copy; Desenvolvido por Higor Terr</p>
+    </footer>
+</body>
+</html>

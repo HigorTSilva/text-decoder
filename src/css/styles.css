@@ -1,0 +1,288 @@
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--background-color);
+    color: var(--primary-text-color);
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.principal-title {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.order-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.order-area h1 {
+    margin-bottom: 3rem;
+}
+
+.order-area .input-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 4.5rem;
+    padding-bottom: 1.5rem;
+    height: 100%;
+    width: 100%;
+    gap: 12px;
+}
+
+.order-area .input-area textarea {
+    resize: none;
+    background: none;
+    outline: none;
+    border: 0;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: lowercase;
+    width: 30rem;
+    height: 12rem;
+}
+
+::placeholder {
+    color: var(--primary-text-color);
+}
+
+.order-area .input-area .exclamation-text {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--terciary-text-color);
+    font-size: 12px;
+}
+
+.order-area .input-area .buttons-area,
+.result-area .result-text .buttons-area {
+    display: flex;
+    gap: 1rem;
+}
+
+.order-area .input-area .buttons-area button {
+    background-color: var(--primary-color);
+    color: var(--secundary-text-color);
+    padding: 12px 2.5rem;
+    font-size: 18px;
+    border-radius: 1rem;
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+    transition: .2s;
+}
+
+.order-area .input-area .buttons-area button:nth-child(2){
+    background: none;
+    color: var(--primary-text-color);
+}
+
+.order-area .input-area .buttons-area button:hover {
+    background-color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+
+.order-area .input-area .buttons-area button:hover:nth-child(2){
+    color: var(--secundary-text-color);
+}
+
+.result-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secundary-background-color);
+    border-radius: 12px;
+    padding: 1rem 3rem;
+    width: 15rem;
+}
+
+.result-area .when-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.result-area .when-empty h1 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.result-area .when-empty p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.result-area .result-text {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.result-area .result-text textarea {
+    resize: none;
+    outline: none;
+    background: none;
+    border: 0;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 8px;
+    text-transform: lowercase;
+    width: 15rem;
+    height: 12rem;
+}
+
+.result-area .result-text .buttons-area button {
+    background: none;
+    color: var(--primary-text-color);
+    padding: 12px 2rem;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 1rem;
+    border: 1px solid var(--accent-color);
+    cursor: pointer;
+    transition: .2s;
+}
+
+.result-area .result-text .buttons-area button:hover {
+    background-color: var(--accent-color);
+    color: var(--secundary-text-color);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 1.5rem;
+}
+
+footer .social-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer .social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: var(--secundary-text-color);
+    padding: 12px 13px;
+    border-radius: 9999px;
+    transition: .2s;
+}
+
+footer .social-icons a:hover {
+    background-color: var(--accent-color);
+}
+
+footer .social-icons a i {
+    font-size: 22px;
+}
+
+footer .social-icons a:nth-child(3) {
+    padding: 12px 9.5px;
+}
+
+footer .social-icons a i:nth-child(3) {
+    font-size: 20px;
+}
+
+footer p {
+    font-size: 18px;
+}
+
+
+@media screen and (max-width:1024px) {
+    body {
+        height: unset;
+    }
+    
+    .container {
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+
+    .order-area {
+        align-items: center;
+    }
+
+    .order-area .input-area {
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .order-area .input-area textarea {
+        width: 100%;
+    }
+
+    .result-area .when-empty img {
+        width: 50%;
+    }
+
+    .result-area {
+        width: 100%;
+        padding: 2rem 0;
+    }
+
+    .result-text {
+        width: 90%;
+    }
+
+    .result-area .result-text textarea {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    body {
+        height: unset;
+    }
+
+    .order-area h1 {
+        font-size: 22px;
+    }
+
+    .order-area .input-area .buttons-area button {
+        padding: 12px 1.5rem;
+    }
+
+    .result-area .when-empty {
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .order-area .input-area .buttons-area button {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .result-area .result-text .buttons-area button {
+        padding: 12px 1.5rem;
+    }
+}
